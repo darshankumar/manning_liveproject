@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+
+<table>
+<tr th:each="item: ${items}">
+    <td th:text="${item.id}" />
+    <td th:text="${item.name}" />
+</tr>
+
+</table>
+
+
+<table>
+<tr th:each="item: ${itemsdb}">
+    <td th:text="${item.id}" />
+    <td th:text="${item.name}" />
+</tr>
+</table>
+
+
+<table>
+<tr th:each="item: ${itemsrepo}">
+    <td th:text="${item.id}" />
+    <td th:text="${item.name}" />
+</tr>
+</table>
